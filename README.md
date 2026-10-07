@@ -27,3 +27,6 @@ HNG15 Lesson 2 — eCommerce website for a demo fan shop.
 
 ## PRD
 See [PRD.md](./PRD.md) for full product requirements.
+
+## Live Demo
+https://fans-only-fans.vercel.app
