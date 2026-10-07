@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { products } from "@/lib/products";
+import { AddToCartButton } from "./add-to-cart-button";
 
 export default async function ProductPage({
   params,
@@ -52,9 +53,7 @@ export default async function ProductPage({
             &nbsp;·&nbsp; ✓ Secure checkout
           </div>
 
-          <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-            Add to Cart
-          </button>
+          <AddToCartButton product={product} />
           <p className="text-xs text-gray-400 text-center mt-3">
             Sign in required at checkout
           </p>
