@@ -8,8 +8,8 @@ export function AddToCartButton({ product }: { product: Product }) {
   const { addItem } = useCart();
   const [added, setAdded] = useState(false);
 
-  const handleClick = () => {
-    addItem({
+  const handleClick = async () => {
+    await addItem({
       productId: product.id,
       name: product.name,
       price: product.price,
